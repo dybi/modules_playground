@@ -3,7 +3,7 @@ import my_module
 from my_package.a import foo as foo_a
 from my_package.b import foo as foo_b
 
-from very.nested.package.third import Third
+from very.nested.package import *
 
 
 def main():
@@ -13,7 +13,8 @@ def main():
     foo_b()
 
     print("-" * 10)
-    print(f"I have a class from a very nested module {type(Third())}")
+    print(f"I have a class from a very nested module {type(first.First())}")
+    print(f"I have a class from a very nested module {type(third.Third())}")
 
 
 if __name__ == "__main__":
