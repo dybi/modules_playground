@@ -13,7 +13,7 @@ def main():
     foo_b()
 
     print("-" * 10)
-    print(f"I have a class from a very nested module {type(first.First())}")
+    print(f"I have a class from a very nested module {type(_first.First())}")
     print(f"I have a class from a very nested module {type(third.Third())}")
 
 

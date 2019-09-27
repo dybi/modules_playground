@@ -1,4 +1,4 @@
-from .first import First
+from ._first import First
 from .second import Second
 
 
