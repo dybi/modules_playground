@@ -1,9 +1,13 @@
-import my_module
+from random import randrange
 
 from my_package.a import foo as foo_a
-from my_package.b import foo as foo_b
-
+from random import randint
+print("this is bad")
+import my_module
+from datetime import date
 from very.nested.package import *
+from my_package.b import foo as foo_b
+from datetime import datetime
 
 
 def main():
@@ -18,4 +22,8 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    # main()
+    # print()
+    print(f"Today is: {date.isoweekday(datetime.now())} day of the week "
+          f"and your lucky number is: {randint(1, 100)}, "
+          f"but beware this one: {randrange(45, 78)}")
